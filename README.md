@@ -57,8 +57,4 @@ javapro/
 
 ---
 
-## Author
-
-**Zuhal** – [GitHub: Iftu-42](https://github.com/Iftu-42)
-
 💚
