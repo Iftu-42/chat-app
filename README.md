@@ -1,30 +1,64 @@
 # Olive Chat App 🌿
 
 A simple **Java GUI Chat Application** using **Java Sockets** and **Swing GUI**.  
-This project was created as part of a class assignment to demonstrate **socket programming** and **graphical interfaces**.
+Allows multiple clients to chat in real-time with an **olive-green themed interface**.
 
 ---
 
 ## Features
 
-- Multi-client chat using Java Sockets
-- Graphical user interface (GUI) built with **Java Swing**
-- Olive-green themed interface 🌿
-- Send and receive messages in real-time
-- Works on multiple client windows simultaneously
+- Multi-client chat using Java Sockets  
+- GUI built with Java Swing  
+- Send/receive messages in real-time  
+- Olive-green theme  
+- Easy to run for class demo
 
 ---
 
-## Getting Started
+## How to Run
 
-### Prerequisites
-
-- Java JDK 17+ (works on JDK 25)
-- VS Code or any Java IDE
-
-### Running the Server
-
-1. Open a terminal in the project folder
-2. Compile the server:
+### 1. Run Server
 ```bash
 javac ChatServer.java
+java ChatServer
+````
+
+* Server listens on port **1234**
+
+### 2. Run Client
+
+```bash
+javac ChatClient.java
+java ChatClient
+```
+
+* Click **Connect** to join
+* Open multiple clients to test chat
+
+---
+
+## How It Works
+
+* **Server** manages clients with threads
+* **Clients** send messages → server broadcasts to all clients
+* GUI provides message area + input field + send button
+
+---
+
+## Folder Structure
+
+```
+javapro/
+│── ChatServer.java
+│── ChatClient.java
+│── README.md
+```
+
+
+---
+
+## Author
+
+**Zuhal** – [GitHub: Iftu-42](https://github.com/Iftu-42)
+
+💚
